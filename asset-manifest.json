@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/quick-template/static/css/main.90cba173.css",
+    "main.js": "/quick-template/static/js/main.cbecc6d6.js",
+    "index.html": "/quick-template/index.html",
+    "main.90cba173.css.map": "/quick-template/static/css/main.90cba173.css.map",
+    "main.cbecc6d6.js.map": "/quick-template/static/js/main.cbecc6d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90cba173.css",
+    "static/js/main.cbecc6d6.js"
+  ]
+}
