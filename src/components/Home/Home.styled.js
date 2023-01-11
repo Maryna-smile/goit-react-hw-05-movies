@@ -29,4 +29,3 @@ export const MovieItem = styled.li`
     scale: 1.05;
   }
 `;
-

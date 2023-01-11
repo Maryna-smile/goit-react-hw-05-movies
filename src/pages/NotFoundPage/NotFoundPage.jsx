@@ -7,11 +7,11 @@ export default function NotFoundPage() {
   const location = useLocation();
   return (
     <>
-    <NotFoundImg src={NotFound}alt="Page 404" />
-    <FlexWrapper>
-    <Text>Page not found, but don`t worry, just </Text>
-    <Button to={location.state?.from ?? '/'}>press here</Button>
-    </FlexWrapper>
+      <NotFoundImg src={NotFound} alt="Page 404" />
+      <FlexWrapper>
+        <Text>Page not found, but don`t worry, just </Text>
+        <Button to={location.state?.from ?? '/'}>press here</Button>
+      </FlexWrapper>
     </>
-  )
+  );
 }

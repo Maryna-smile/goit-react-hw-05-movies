@@ -20,7 +20,7 @@ export default function Layout() {
       <main>
         <Container>
           <Suspense fallback={null}>
-          <Outlet />
+            <Outlet />
           </Suspense>
         </Container>
       </main>

@@ -37,7 +37,7 @@ export default function Movies() {
   const handleQuerySubmit = e => {
     e.preventDefault();
     if (!query.trim()) {
-      toast('Wow so easy!');
+      toast('Enter something, please!');
       return;
     }
 

@@ -16,20 +16,19 @@ export const Button = styled(Link)`
 `;
 
 export const NotFoundImg = styled.img`
-text-align: center;
-width: 25%;
-margin: 50px auto;
+  text-align: center;
+  width: 25%;
+  margin: 50px auto;
 `;
 
 export const FlexWrapper = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
-margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 50px auto;
 `;
 
 export const Text = styled.p`
-font-size: 25px;
-
+  font-size: 25px;
 `;

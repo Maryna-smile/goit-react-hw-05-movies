@@ -15,25 +15,25 @@ export default function Cast() {
 
   return (
     <section>
-    <ActorList>
-    {cast.length > 0 &&
-        cast.map(el => {
-          const { id, profile_path, original_name } = el;
-          return (
-            <ActorItem key={id}>
-              <ActorImg
-                src={
-                  profile_path
-                    ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                    : Photo
-                }
-                alt={`actor ${original_name}`}
-              />
-              <Text>{original_name}</Text>
-            </ActorItem>
-          );
-        })}
-    </ActorList>
+      <ActorList>
+        {cast.length > 0 &&
+          cast.map(el => {
+            const { id, profile_path, original_name } = el;
+            return (
+              <ActorItem key={id}>
+                <ActorImg
+                  src={
+                    profile_path
+                      ? `https://image.tmdb.org/t/p/w500${profile_path}`
+                      : Photo
+                  }
+                  alt={`actor ${original_name}`}
+                />
+                <Text>{original_name}</Text>
+              </ActorItem>
+            );
+          })}
+      </ActorList>
     </section>
   );
 }

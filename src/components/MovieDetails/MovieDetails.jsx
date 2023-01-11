@@ -47,7 +47,9 @@ export default function MovieDetails() {
             <MovieTitle>
               {original_title} ({release_date && release_date.slice(0, 4)})
             </MovieTitle>
-            <MovieText> User score: {Math.ceil((vote_average * 100) / 10)} %</MovieText>
+            <MovieText>
+              User score: {Math.ceil((vote_average * 100) / 10)} %
+            </MovieText>
             <MovieCaptions>Overview</MovieCaptions>
             <MovieText>{overview}</MovieText>
             <MovieCaptions>Genres</MovieCaptions>
@@ -59,17 +61,15 @@ export default function MovieDetails() {
                 })}
             </MovieGenres>
             <Button to={location.current.state?.from ?? '/'}>Go back</Button>
-            
           </InnerUpFlex>
         </FlexWrapper>
-       
         <InnerUpFlex>
-        <MovieCaptions>Additional information</MovieCaptions>
-        <InnerDownFlex>
-          <ExtraButton to="actors">Cast</ExtraButton>
-          <ExtraButton to="reviews">Reviews</ExtraButton>
-        </InnerDownFlex>
-        <Outlet />
+          <MovieCaptions>Additional information</MovieCaptions>
+          <InnerDownFlex>
+            <ExtraButton to="actors">Cast</ExtraButton>
+            <ExtraButton to="reviews">Reviews</ExtraButton>
+          </InnerDownFlex>
+          <Outlet />
         </InnerUpFlex>
       </FlexGeneral>
     </>
