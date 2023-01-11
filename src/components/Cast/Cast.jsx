@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCast } from 'components/services/api';
 import Photo from '../../images/no_photo.jpg';
-import { ActorImg, ActorItem, ActorList, ActorName, Text } from './Cast.styled';
+import { ActorImg, ActorItem, ActorList, Text } from './Cast.styled';
 
 export default function Cast() {
   const { movieId } = useParams();
